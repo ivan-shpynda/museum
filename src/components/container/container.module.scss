@@ -1,0 +1,111 @@
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.subheading {
+    line-height: 1.2;
+    font-size: 18px;
+    color: var(--dark-gray);
+}
+
+.headingBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    max-width: 660px;
+}
+
+.btnBlock {
+    display: flex;
+    gap: 24px;
+}
+
+.buttonPrimary {
+    padding: 16px 24px;
+    font-size: 14px;
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.buttonSecondary {
+    padding: 16px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid var(--primary);
+    background: transparent;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container2 {
+    background-color: var(--dark);
+    padding: 48px 0;
+
+    h2 {
+        color: var(--light-gray);
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 48px;
+        margin-top: 32px;
+    }
+}
+
+.flexWrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 48px;
+}
+
+.container2text {
+    color: var(--light-gray);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.button3 {
+    color: var(--light-gray);
+    padding: 16px 24px;
+    font-size: 18px;
+    border: 2px solid var(--light-gray);
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container2ButtonImage {
+    max-width: 1200px;
+    padding: 32px 0;
+    margin: 0 auto;
+}
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
