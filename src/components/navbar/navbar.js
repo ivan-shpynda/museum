@@ -10,12 +10,17 @@ export default function Navbar() {
     return (
         <div className={styles.navbar}>
             <div>
-                <Image src="/logo.png" alt="logo-img" width={76} height={76} />
+                <Image
+                    src="/museum/logo.png"
+                    alt="logo-img"
+                    width={76}
+                    height={76}
+                />
                 {isHomePage ? (
                     <div />
                 ) : (
                     <Image
-                        src="/logo-add.png"
+                        src="/museum/logo-add.png"
                         alt="logo-img"
                         width={120}
                         height={66}

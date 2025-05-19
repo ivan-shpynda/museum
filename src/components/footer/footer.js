@@ -22,7 +22,12 @@ export default function Footer() {
                     <p>МЕДІА ПРО НАС</p>
                 </div>
                 <div>
-                    <Image src="/map.png" alt="map" width={500} height={300} />
+                    <Image
+                        src="/museum/map.png"
+                        alt="map"
+                        width={500}
+                        height={300}
+                    />
                 </div>
             </div>
             <div className={styles.bottom}>
