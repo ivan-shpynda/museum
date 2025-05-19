@@ -23,7 +23,7 @@ export default function Container() {
                 </div>
                 <div>
                     <Image
-                        src={"/cross2.png"}
+                        src="/cross2.png"
                         alt="cross-image"
                         width={460}
                         height={600}
@@ -33,7 +33,7 @@ export default function Container() {
             <div className={styles.container2}>
                 <div className={styles.flexWrapper}>
                     <Image
-                        src={"/museum1.png"}
+                        src="/museum1.png"
                         alt="museum1"
                         width={534}
                         height={364}
@@ -55,7 +55,7 @@ export default function Container() {
                 <div className={styles.container2ButtonImage}>
                     <Image
                         className="{styles.museum3}"
-                        src={"/museum3.png"}
+                        src="/museum3.png"
                         alt="museum"
                         width={1200}
                         height={502}
