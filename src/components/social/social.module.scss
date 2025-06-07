@@ -1,0 +1,9 @@
+.wrap {
+    display: flex;
+    gap: 32px;
+
+    & > a > svg {
+        width: 32px;
+        height: 32px;
+    }
+}

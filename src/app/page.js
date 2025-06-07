@@ -1,8 +1,30 @@
-import Container from "@/components/container/container";
+"use client";
+import Image from "next/image";
+import styles from "./page.module.scss";
+
+const images = [
+    { url: "/images/image-2.png" },
+    { url: "/images/image-3.png" },
+    { url: "/images/image-4.png" },
+];
+
 export default function Home() {
     return (
-        <div>
-            <Container />
-        </div>
+        <>
+            <div className={`container ${styles.main_wrap}`}>
+                <div className={styles.logo_wrap}>
+                    <Image
+                        src="/images/logo.png"
+                        alt="logo-img"
+                        width={270}
+                        height={270}
+                    />
+                    <h1>
+                        МУЗЕЙ ПАМʼЯТI МИТРОПОЛИТА <span>АНДРЕЯ</span>
+                    </h1>
+                </div>
+                <div className={styles.slider}></div>
+            </div>
+        </>
     );
 }

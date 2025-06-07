@@ -1,0 +1,79 @@
+.header {
+    background-color: var(--primary);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 18px;
+}
+
+.logo_text {
+    font-family: "Bebas Neue Book";
+    color: var(--light-text);
+    font-size: 22px;
+    width: 120px;
+    min-width: 120px;
+    padding: 0 8px;
+    position: relative;
+    min-height: 62px;
+
+    &_bold {
+        font-family: "Bebas Neue Bold";
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -5px;
+        top: 0;
+        right: 0;
+        height: 64px;
+        width: 2px;
+        background-color: var(--light-text);
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin-right: 46px;
+    }
+
+    li {
+        padding: 8px 16px;
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--light-text);
+            position: relative;
+        }
+
+        a:hover {
+            color: var(--white);
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:before {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary);
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover::before {
+            background-color: var(--light-text);
+        }
+    }
+}
