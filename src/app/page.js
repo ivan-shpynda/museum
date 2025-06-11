@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "./page.module.scss";
+import Slider from "@/components/slider/slider";
 
 const images = [
     { url: "/images/image-2.png" },
@@ -23,7 +24,7 @@ export default function Home() {
                         МУЗЕЙ ПАМʼЯТI МИТРОПОЛИТА <span>АНДРЕЯ</span>
                     </h1>
                 </div>
-                <div className={styles.slider}></div>
+                <Slider />
             </div>
         </>
     );

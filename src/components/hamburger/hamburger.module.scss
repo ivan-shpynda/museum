@@ -1,0 +1,21 @@
+.hamburger {
+    display: none;
+
+    @media (max-width: 1279px) {
+        display: block;
+    }
+
+    width: 36px;
+    height: 24px;
+
+    & > div {
+        height: 4px;
+        width: 100%;
+        background-color: var(--light-text);
+        border-radius: 3px;
+    }
+
+    & > div:nth-child(2) {
+        margin: 6px 0;
+    }
+}

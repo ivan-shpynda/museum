@@ -1,0 +1,66 @@
+@use "../../styles/mixins.scss" as *;
+
+.footer {
+    @include y-paddings;
+    background-color: var(--dark-gray);
+    color: var(--light-text);
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    li {
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--light-text);
+            position: relative;
+        }
+
+        a:hover {
+            color: var(--white);
+            transition: color 0.3s ease-in-out;
+        }
+    }
+}
+
+.main_block {
+    padding: 32px 0 64px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+    }
+
+    & > div,
+    & > ul {
+        width: 30%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+
+.bottom_block {
+    @include y-paddings;
+    border-top: 1px solid var(--light-gray);
+}
+
+.info_block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_text {
+    line-height: 2;
+    margin-bottom: 16px;
+}
