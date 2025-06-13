@@ -22,10 +22,30 @@
 
 body {
     background-color: var(--light-background);
+    font-family: "Nunito", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 56px;
+    color: var(--dark);
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -18px;
+    background-color: var(--light-gray);
 }
 
 a {
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -33,4 +53,9 @@ a {
     max-width: 1440px;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+p {
+    font-size: 18px;
+    // color: var(--dark);
 }

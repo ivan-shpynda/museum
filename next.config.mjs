@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig = {
-    basePath: isProd ? "/museum" : "",
-    output: "export",
+    basePath: "",
+    output: "standalone",
     distDir: "dist",
     images: {
         unoptimized: true,

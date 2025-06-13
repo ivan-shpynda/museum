@@ -10,7 +10,7 @@ export default function Footer({}) {
                 <div className={styles.main_block}>
                     <div className={styles.info_block}>
                         <Logotext />
-                        <div>Вул. Максима Кривоноса 1, 79000</div>
+                        <div>Львів, вул. Максима Кривоноса 1, 79000</div>
                         <div>Тел: 050 519 1371</div>
                         <div>Email: museum.andrey@gmail.com</div>
                     </div>

@@ -5,7 +5,7 @@ export default function History() {
     return (
         <div>
             <Wrapper>
-                <h2>Історія Музею</h2>
+                <h1>Історія Музею</h1>
                 <p className={styles.text}>
                     У 1630 р. на цьому місці був деревʼяний монастир й
                     рівночасно деревʼяний костел під назвою св. мчч. Роха і

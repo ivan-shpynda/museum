@@ -1,12 +1,24 @@
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
 import "@/styles/global.scss";
-import { Roboto } from "next/font/google";
+import { Roboto, Nunito, Oswald } from "next/font/google";
 
 const roboto = Roboto({
     subsets: ["cyrillic"],
     weight: ["400", "700"],
     variable: "--font-roboto",
+});
+
+const nunito = Nunito({
+    subsets: ["cyrillic"],
+    weight: ["400", "700"],
+    variable: "--font-nunito",
+});
+
+const oswald = Oswald({
+    subsets: ["cyrillic"],
+    weight: ["400", "700"],
+    variable: "--font-oswald",
 });
 
 export const metadata = {
@@ -17,7 +29,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="uk">
-            <body className={roboto.className}>
+            <body
+                className={`${roboto.variable} ${nunito.variable} ${oswald.variable}`}
+            >
                 <Header />
                 {children}
                 <Footer />

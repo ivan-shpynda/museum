@@ -7,10 +7,9 @@
 }
 
 .logo_wrap {
+    display: flex;
     margin-top: 64px;
     width: 50%;
-    display: flex;
-    color: #5e5e5e;
     max-width: 600px;
     margin: 230px auto 0;
 
@@ -26,6 +25,7 @@
         margin-top: 70px;
         margin-left: 34px;
         position: relative;
+        color: var(--dark-gray);
     }
 
     span {
@@ -34,7 +34,7 @@
 
     h1::before {
         content: "";
-        background-color: #5e5e5e;
+        background-color: var(--dark-gray);
         position: absolute;
         width: 3px;
         height: 155px;
