@@ -25,6 +25,11 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+main {
+    padding: 48px 0;
+    min-height: 70vh;
+}
+
 h1 {
     text-transform: uppercase;
     position: relative;
@@ -43,6 +48,10 @@ h1::before {
     background-color: var(--light-gray);
 }
 
+h2 {
+    font-family: "Roboto", sans-serif;
+}
+
 a {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
@@ -50,12 +59,12 @@ a {
 
 .container {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1220px;
     padding-left: 16px;
     padding-right: 16px;
 }
 
 p {
     font-size: 18px;
-    // color: var(--dark);
+    // color: var(--dark); // TODO: change
 }

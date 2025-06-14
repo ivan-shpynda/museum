@@ -17,6 +17,7 @@ export default function Home() {
                     <Image
                         src="/images/logo.png"
                         alt="logo-img"
+                        className={styles.logo}
                         width={270}
                         height={270}
                     />

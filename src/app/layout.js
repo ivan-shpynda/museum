@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
                 className={`${roboto.variable} ${nunito.variable} ${oswald.variable}`}
             >
                 <Header />
-                {children}
+                <main className="container main">{children}</main>
                 <Footer />
             </body>
         </html>
