@@ -1,17 +1,15 @@
-"use client";
-import Image from "next/image";
 import Link from "next/link";
-import styles from "./header.module.scss";
+import classes from "./header.module.scss";
 import Social from "@/components/social/social";
 import Hamburger from "@/components/hamburger/hamburger";
 import Logotext from "../logotext/logotext";
 
 export default function Navbar() {
     return (
-        <header className={styles.header}>
-            <div className={`container ${styles.wrapper}`}>
+        <header className={classes.header}>
+            <div className={`container ${classes.wrapper}`}>
                 <Logotext />
-                <nav className={styles.nav}>
+                <nav className={classes.nav}>
                     <ul>
                         <li>
                             <Link href="/events">ВИСТАВКИ ТА ПОДІЇ</Link>

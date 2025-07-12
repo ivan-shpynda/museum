@@ -30,6 +30,7 @@
     right: 4px;
     bottom: 4px;
     left: 4px;
+    overflow: hidden;
 }
 
 .image {
@@ -39,4 +40,16 @@
     object-fit: cover;
     border-top-right-radius: 232px;
     border-top-left-radius: 232px;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+}
+
+.fadeOut {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fadeIn {
+    opacity: 1;
+    z-index: 2;
 }

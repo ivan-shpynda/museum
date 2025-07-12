@@ -1,16 +1,18 @@
 "use client";
 
-import styles from "./hamburger.module.scss";
+import classes from "./hamburger.module.scss";
 import { useState } from "react";
 
 export default function Hamburger() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div
-            className={styles.hamburger}
+            className={classes.hamburger}
             onClick={() => setIsOpen((value) => !value)}
         >
-            <div className={`${isOpen ? styles.opened : ""} ${styles.wrapper}`}>
+            <div
+                className={`${isOpen ? classes.opened : ""} ${classes.wrapper}`}
+            >
                 <div></div>
                 <div></div>
                 <div></div>

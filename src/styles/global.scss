@@ -50,6 +50,11 @@ h1::before {
 
 h2 {
     font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 16px 0;
+    text-transform: uppercase;
+    color: var(--dark-gray);
 }
 
 a {
